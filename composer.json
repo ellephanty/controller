@@ -1,0 +1,32 @@
+{
+  "name": "ellephanty/controller",
+  "description": "Basic controller for API",
+  "type": "library",
+  "license": "MIT",
+  "scripts": {
+    "test": "phpunit"
+  },
+  "autoload": {
+    "psr-4": {
+      "Ellephanty\\Controller\\": "src/"
+    },
+    "files": [
+      "src/controller.php"
+    ]
+  },
+  "authors": [
+    {
+      "name": "Cristian Emanuelle Guzmán Suárez",
+      "email": "cristian.guzman.contacto@gmail.com"
+    }
+  ],
+  "require-dev": {
+    "guzzlehttp/guzzle": "5.3",
+    "phpunit/phpunit": "^5.7",
+    "vlucas/phpdotenv": "^2.6"
+  },
+  "require": {
+    "ellephanty/model": "0.0.5",
+    "ellephanty/alerty": "0.0.2"
+  }
+}
