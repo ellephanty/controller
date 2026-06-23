@@ -13,8 +13,8 @@ class ControllerTest extends PHPUnit_Framework_TestCase
     {
         ob_start();
 
-        controller(function ($data) {
-            return ['ok' => true];
+        controller(function ($request, $response) {
+            return $response->status(200)->json(['ok' => true]);
         });
 
         $output = ob_get_clean();
@@ -35,5 +35,6 @@ class ControllerTest extends PHPUnit_Framework_TestCase
 
         $this->assertJson($output);
         $this->assertContains('message', $output);
+        $this->assertEquals(500, http_response_code());
     }
 }

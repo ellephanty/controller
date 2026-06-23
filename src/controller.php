@@ -4,6 +4,7 @@ namespace Ellephanty\Controller;
 
 use Ellephanty\Model\Model;
 use function Ellephanty\Alerty\exception_email;
+use Ellephanty\Controller\Response;
 
 function controller($callback)
 {
@@ -16,7 +17,11 @@ function controller($callback)
             );
         }
 
-        $response = call_user_func($callback, $data, Model::connection());
+        $request = [
+            'body' => $data
+        ];
+
+        $response = call_user_func($callback, $request, $response = new Response(), Model::connection());
 
         if (Model::database()) {
             Model::database()->close();
@@ -50,8 +55,7 @@ function controller($callback)
         }
         exception_email($e);
 
-        http_response_code(500);
-        echo json_encode([
+        return Response::status(500)->json([
             'message' => getenv('APP_DEBUG') ? $e->getMessage() : 'Error interno',
         ]);
     }
