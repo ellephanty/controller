@@ -29,6 +29,10 @@ function controller($callback)
 
         // imprime el tipo de variable
 
+        if (is_object($response) && method_exists($response, 'toArray')) {
+            $response = $response->toArray();
+        }
+
         if (!is_array($response) && !is_object($response)) {
             if (!$response || $response == 'false' || $response == false || $response == null || $response == 'null') {
                 return;
