@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ab087d556744d903f6ce4f89ee126fab",
+    "content-hash": "e14e7d84bfc5196863084b7a2746895a",
     "packages": [
         {
             "name": "ellephanty/alerty",
@@ -55,16 +55,16 @@
         },
         {
             "name": "ellephanty/collecty",
-            "version": "v0.0.3",
+            "version": "v0.0.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ellephanty/collecty.git",
-                "reference": "be2d00bace0d5b1ba5cd4771b25e30d0414d9615"
+                "reference": "61837ff878b7b52e7ee4b949b4112a473f6ee757"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ellephanty/collecty/zipball/be2d00bace0d5b1ba5cd4771b25e30d0414d9615",
-                "reference": "be2d00bace0d5b1ba5cd4771b25e30d0414d9615",
+                "url": "https://api.github.com/repos/ellephanty/collecty/zipball/61837ff878b7b52e7ee4b949b4112a473f6ee757",
+                "reference": "61837ff878b7b52e7ee4b949b4112a473f6ee757",
                 "shasum": ""
             },
             "require-dev": {
@@ -89,9 +89,9 @@
             "description": "Array collection like laravel",
             "support": {
                 "issues": "https://github.com/ellephanty/collecty/issues",
-                "source": "https://github.com/ellephanty/collecty/tree/v0.0.3"
+                "source": "https://github.com/ellephanty/collecty/tree/v0.0.4"
             },
-            "time": "2026-06-26T19:50:22+00:00"
+            "time": "2026-06-26T23:07:49+00:00"
         },
         {
             "name": "ellephanty/database",
@@ -138,20 +138,20 @@
         },
         {
             "name": "ellephanty/model",
-            "version": "v0.0.9",
+            "version": "v0.0.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ellephanty/model.git",
-                "reference": "85e7992be25de124a8d22e296ac91e7d85f126e1"
+                "reference": "a68559497bf47e657cdcf10f8c69425b58993674"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ellephanty/model/zipball/85e7992be25de124a8d22e296ac91e7d85f126e1",
-                "reference": "85e7992be25de124a8d22e296ac91e7d85f126e1",
+                "url": "https://api.github.com/repos/ellephanty/model/zipball/a68559497bf47e657cdcf10f8c69425b58993674",
+                "reference": "a68559497bf47e657cdcf10f8c69425b58993674",
                 "shasum": ""
             },
             "require": {
-                "ellephanty/collecty": "0.0.3",
+                "ellephanty/collecty": "0.0.4",
                 "ellephanty/database": "0.0.3"
             },
             "require-dev": {
@@ -178,9 +178,9 @@
             "description": "Models like laravel using javascript signs",
             "support": {
                 "issues": "https://github.com/ellephanty/model/issues",
-                "source": "https://github.com/ellephanty/model/tree/v0.0.9"
+                "source": "https://github.com/ellephanty/model/tree/v0.0.10"
             },
-            "time": "2026-06-26T19:52:44+00:00"
+            "time": "2026-06-26T23:13:52+00:00"
         },
         {
             "name": "phpmailer/phpmailer",
