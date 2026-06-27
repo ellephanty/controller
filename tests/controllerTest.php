@@ -28,7 +28,7 @@ class ControllerTest extends PHPUnit_Framework_TestCase
         ob_start();
 
         controller(function () {
-            throw new Exception('error');
+            throw new Exception('Test Exception');
         });
 
         $output = ob_get_clean();
