@@ -37,4 +37,31 @@ class ControllerTest extends PHPUnit_Framework_TestCase
         $this->assertContains('message', $output);
         $this->assertEquals(500, http_response_code());
     }
+
+    public function testControllerWithQuery()
+    {
+        $_GET = [
+            'id' => '123',
+            'filter' => [
+                'status' => 'active'
+            ]
+        ];
+
+        ob_start();
+
+        controller(function ($request, $response) {
+            $query = $request['query'];
+
+            return $response->status(200)->json([
+                'id' => $query['id'],
+                'status' => $query['filter']['status']
+            ]);
+        });
+
+        $output = ob_get_clean();
+
+        $this->assertJson($output);
+        $this->assertContains('123', $output);
+        $this->assertContains('active', $output);
+    }
 }

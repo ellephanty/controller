@@ -18,7 +18,8 @@ function controller($callback)
         }
 
         $request = [
-            'body' => $data
+            'body' => $data,
+            'query' => $_GET,
         ];
 
         $response = call_user_func($callback, $request, $response = new Response(), Model::connection());
