@@ -28,9 +28,9 @@ class Response
 
     public static function json($data)
     {
-        if( !headers_sent() ) {
+        if (!headers_sent()) {
             header('Content-Type: application/json');
         }
-        echo json_encode($data);
+        echo json_encode($data, JSON_UNESCAPED_UNICODE);
     }
 }
