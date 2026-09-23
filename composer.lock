@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "dbba2b7402ab1fb16b8b34f0e994a983",
+    "content-hash": "8ba7d74b1be70c86b92cd913ce8a5ddf",
     "packages": [
         {
             "name": "ellephanty/alerty",
@@ -138,16 +138,16 @@
         },
         {
             "name": "ellephanty/model",
-            "version": "v0.0.26",
+            "version": "v0.0.27",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ellephanty/model.git",
-                "reference": "393f5965223f41f4b815b56293797c18d14a7042"
+                "reference": "32cd74e25fd4539e8b6b48ece2609560fdac6082"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ellephanty/model/zipball/393f5965223f41f4b815b56293797c18d14a7042",
-                "reference": "393f5965223f41f4b815b56293797c18d14a7042",
+                "url": "https://api.github.com/repos/ellephanty/model/zipball/32cd74e25fd4539e8b6b48ece2609560fdac6082",
+                "reference": "32cd74e25fd4539e8b6b48ece2609560fdac6082",
                 "shasum": ""
             },
             "require": {
@@ -178,9 +178,9 @@
             "description": "Models like laravel using javascript signs",
             "support": {
                 "issues": "https://github.com/ellephanty/model/issues",
-                "source": "https://github.com/ellephanty/model/tree/v0.0.26"
+                "source": "https://github.com/ellephanty/model/tree/v0.0.27"
             },
-            "time": "2026-09-23T17:55:10+00:00"
+            "time": "2026-09-23T20:31:56+00:00"
         },
         {
             "name": "phpmailer/phpmailer",
